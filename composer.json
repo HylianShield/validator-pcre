@@ -1,0 +1,42 @@
+{
+  "name": "hylianshield/validator-pcre",
+  "type": "library",
+  "description": "PCRE validation layer",
+  "homepage": "https://github.com/HylianShield/validator-pcre",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jan-Marten de Boer",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.0",
+    "lib-pcre": "^8.38",
+    "ext-pcre": "^7.0",
+    "hylianshield/validator": "^2.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "HylianShield\\Validator\\Pcre\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HylianShield\\Tests\\Validator\\Pcre\\": "tests"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "tests",
+      ".gitignore",
+      ".travis.yml",
+      "phpunit.xml"
+    ]
+  }
+}
